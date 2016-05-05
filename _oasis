@@ -22,3 +22,10 @@ Document api
   XOcamlbuildPath:    .
   Install:           false
   XOcamlbuildLibraries: win-error
+
+Executable example
+  Install:            false
+  CompiledObject:     best
+  Path:               lib_test
+  MainIs:             example.ml
+  BuildDepends:       win-error, unix
