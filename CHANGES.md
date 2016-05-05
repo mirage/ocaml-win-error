@@ -1,2 +1,2 @@
-0.1 (unreleased)
-- First version, error codes up to 500
+0.1 (2016-05-05)
+- Initial release
