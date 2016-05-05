@@ -253,3 +253,6 @@ val of_unix_error: Unix.error -> t option
 
 val to_string: t -> string
 (** Convert the error into a short printable string *)
+
+val error_message: t -> string
+(** A synonym for [to_string], analagous to [Unix.error_message] *)
