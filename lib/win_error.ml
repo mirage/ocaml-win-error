@@ -1,0 +1,10 @@
+
+include Win_error_t
+
+let of_unix_error = function
+  | Unix.EUNKNOWNERR code -> Win_error_of_int.of_int (-code)
+  | _ -> None
+
+let to_string = Win_error_to_string.to_string
+
+let error_message = to_string
