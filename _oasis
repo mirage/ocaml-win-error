@@ -12,7 +12,7 @@ Library "win-error"
   CompiledObject:     best
   Path:               lib
   Findlibname:        win-error
-  Modules:            Win_error, Win_error_t, Win_error_of_int
+  Modules:            Win_error, Win_error_t, Win_error_of_int, Win_error_to_string
   BuildDepends:       unix
 
 Document api
