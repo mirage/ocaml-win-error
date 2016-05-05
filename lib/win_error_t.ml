@@ -164,7 +164,7 @@ type t =
   | Meta_expansion_too_long
   | Invalid_signal_number
   | Thread_1_inactive
-  | Lock_failed
+  | Locked
   | Too_many_modules
   | Nesting_not_allowed
   | Exe_machine_type_mismatch

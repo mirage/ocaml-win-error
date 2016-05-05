@@ -1,3 +1,4 @@
+open Win_error_t
 
 let of_int = function
   | 0 -> Some (Success)
@@ -19,7 +20,7 @@ let of_int = function
   | 16 -> Some (Current_directory)
   | 17 -> Some (Not_same_device)
   | 18 -> Some (No_more_files)
-  | 29 -> Some (Write_protect)
+  | 19 -> Some (Write_protect)
   | 20 -> Some (Bad_unit)
   | 21 -> Some (Not_ready)
   | 22 -> Some (Bad_command)
@@ -164,7 +165,7 @@ let of_int = function
   | 208 -> Some (Meta_expansion_too_long)
   | 209 -> Some (Invalid_signal_number)
   | 210 -> Some (Thread_1_inactive)
-  | 212 -> Some (Lock_failed)
+  | 212 -> Some (Locked)
   | 214 -> Some (Too_many_modules)
   | 215 -> Some (Nesting_not_allowed)
   | 216 -> Some (Exe_machine_type_mismatch)
@@ -180,7 +181,7 @@ let of_int = function
   | 229 -> Some (Pipe_local)
   | 230 -> Some (Bad_pipe)
   | 231 -> Some (Pipe_busy)
-  | 231 -> Some (No_data)
+  | 232 -> Some (No_data)
   | 233 -> Some (Pipe_not_connected)
   | 234 -> Some (More_data)
   | 240 -> Some (Vc_disconnected)
