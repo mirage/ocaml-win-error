@@ -1,0 +1,7 @@
+# OASIS_START
+# DO NOT EDIT (digest: 3c785a3566ac78c54a40063c7ede0b9b)
+lib/Win_error
+lib/Win_error_t
+lib/Win_error_of_int
+lib/Win_error_to_string
+# OASIS_STOP

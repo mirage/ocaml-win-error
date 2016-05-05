@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: 74fbb79cdea355f310d85855ab4f6f19)
+version = "0.1"
+description = "Win32 error values"
+requires = "unix"
+archive(byte) = "win-error.cma"
+archive(byte, plugin) = "win-error.cma"
+archive(native) = "win-error.cmxa"
+archive(native, plugin) = "win-error.cmxs"
+exists_if = "win-error.cma"
+# OASIS_STOP
+
