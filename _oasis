@@ -1,12 +1,12 @@
 OASISFormat: 0.3
 Name:        win-error
-Version:     0.1
+Version:     0.2
 Synopsis:    Win32 error values
 Authors:     David Scott
 License:     ISC
 Plugins:     META (0.3), DevFiles (0.4)
 BuildTools:  ocamlbuild
-OCamlVersion: >= 4.00
+OCamlVersion: >= 3.12.1
 
 Library "win-error"
   CompiledObject:     best

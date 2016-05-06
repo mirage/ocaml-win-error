@@ -1,9 +1,10 @@
 # ocaml-win-error: manipulate Windows system errors
 
 If your application is likely to run on Windows, simply replace uses of
-`Unix.error_message` with `Win_error.error_message` for enhanced error
-reporting. Note this code is platform-agnostic so can be linked into Unix
-applications too.
+`Unix.error_message` with `Win_error.error_message`. When the application
+runs on Windows, Windows system errors will be decoded; when the application
+runs elsewhere then the existing `Unix.error_message` function is
+called transparently.
 
 A simple example:
 ```ocaml
