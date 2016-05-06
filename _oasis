@@ -1,6 +1,6 @@
 OASISFormat: 0.3
 Name:        win-error
-Version:     0.1
+Version:     0.2
 Synopsis:    Win32 error values
 Authors:     David Scott
 License:     ISC
