@@ -255,4 +255,8 @@ val to_string: t -> string
 (** Convert the error into a short printable string *)
 
 val error_message: Unix.error -> string
-(** A wrapper of [Unix.error_message] which also understands Windows system errors. *)
+(** A wrapper of [Unix.error_message] which also understands Windows system errors.
+
+    If called on a Win32 system, this will decode Unix.EUNKNOWNERR values as Windows
+    system errors. If called on other systems, it simply calls Unix.error_message.
+ *)
