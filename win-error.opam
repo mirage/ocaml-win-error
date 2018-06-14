@@ -9,19 +9,18 @@ dev-repo: "https://github.com/djs55/ocaml-win-error.git"
 bug-reports: "https://github.com/djs55/ocaml-win-error/issues"
 
 build: [
-  [make]
+  [ "jbuilder" "subst"] {pinned}
+  [ "jbuilder" "build" "-p" name "-j" jobs ]
 ]
 
 build-test:[
-  [make "test"]
+  [ "jbuilder" "subst"] {pinned}
+  [ "jbuilder" "runtest" "-p" name "-j" jobs ]
 ]
-install: [make "install"]
-remove: ["ocamlfind" "remove" "win-error"]
 
 depends: [
   "base-bytes"
   "base-unix"
-  "ocamlfind" {build}
-  "ocamlbuild" {build}
+  "jbuilder" {build & >="1.0+beta10"}
 ]
 available: [ ocaml-version >= "3.12.1" ]
