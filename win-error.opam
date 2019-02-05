@@ -4,9 +4,9 @@ version: "0.2"
 maintainer: "dave@recoil.org"
 authors: "David Scott"
 license: "ISC"
-homepage: "https://github.com/djs55/ocaml-win-error"
-bug-reports: "https://github.com/djs55/ocaml-win-error/issues"
-doc: "https://djs55.github.io/ocaml-win-error/"
+homepage: "https://github.com/mirage/ocaml-win-error"
+bug-reports: "https://github.com/mirage/ocaml-win-error/issues"
+doc: "https://mirage.github.io/ocaml-win-error/"
 depends: [
   "ocaml" {>= "3.12.1"}
   "base-bytes"
@@ -18,7 +18,7 @@ build: [
   ["dune" "build" "-p" name "-j" jobs]
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
-dev-repo: "git+https://github.com/djs55/ocaml-win-error.git"
+dev-repo: "git+https://github.com/mirage/ocaml-win-error.git"
 synopsis: "Manipulate Windows system errors"
 description: """
 If your application is likely to run on Windows, simply replace uses of
